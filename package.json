@@ -17,7 +17,7 @@
     "author": "Your Name",
     "license": "MIT",
     "dependencies": {
-        "axios": "^0.21.4",
+        "axios": "^0.28.0",
         "chalk": "^4.1.2",
         "cheerio": "^1.0.0-rc.10",
         "dotenv": "^10.0.0",
