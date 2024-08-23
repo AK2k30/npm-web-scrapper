@@ -2,7 +2,7 @@
 
 **Version:** 1.0.3
 **Author:** Akash Singh
-**License:** ISC
+**License:** GPL-3.0
 
 ## Table of Contents
 
@@ -25,8 +25,7 @@
 
 ## Features
 
-* **Docker Support:**
-* * Dockerfile provided for easy containerization and deployment.
+* **Docker Support:** Dockerfile provided for easy containerization and deployment.
 * **Automatic Web Scraping:** Quickly scrape a website's data using the built-in automatic scraping function.
 * **Custom Class-Based Scraping:** Target specific parts of a website by specifying class names and assigning custom titles to the scraped data.
 * **AI-Powered Chatbot:** Interact with the scraped data using an AI chatbot that can answer questions based on the data in JSON format.
@@ -37,7 +36,7 @@
 
 1. **Start the CLI:**
    Run the following command in your terminal:
-   <pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>bash</span><div class="flex items-center"><span class="" data-state="closed"><button class="flex gap-1 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="icon-sm"><path fill="currentColor" fill-rule="evenodd" d="M7 5a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3h-2v2a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-9a3 3 0 0 1 3-3h2zm2 2h5a3 3 0 0 1 3 3v5h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-9a1 1 0 0 0-1 1zM5 9a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1z" clip-rule="evenodd"></path></svg>Copy code</button></span></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash">npm run web-scrap-ai
+   <pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span></span><div class="flex items-center"><span class="" data-state="closed"><button class="flex gap-1 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="icon-sm"><path fill="currentColor" fill-rule="evenodd" d="M7 5a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3h-2v2a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-9a3 3 0 0 1 3-3h2zm2 2h5a3 3 0 0 1 3 3v5h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-9a1 1 0 0 0-1 1zM5 9a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1z" clip-rule="evenodd"></path></svg></button></span></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash">npm run web-scrap-ai
    </code></div></div></pre>
 2. **Enter the Website URL:**
    The CLI will prompt you to enter the URL of the website you want to scrape.
@@ -135,6 +134,12 @@ docker run -it web-scrap-ai
 
 Contributions to **Web-Scrap-AI** are welcome! If you have ideas for new features or improvements, feel free to submit a pull request or open an issue.
 
+## Support
+
+#### If you like this project, show your support & love!
+
+[![buy me a coffee](https://res.cloudinary.com/customzone-app/image/upload/c_pad,w_200/v1712840190/bmc-button_wl78gx.png)](https://www.buymeacoffee.com/akashsunile)
+
 ## License
 
-This project is licensed under the ISC License. See the LICENSE file for details.
+This project is licensed under the GPL-3.0 License. See the [LICENSE](#LICENSE) file for details.
