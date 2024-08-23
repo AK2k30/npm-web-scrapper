@@ -2,7 +2,7 @@
 
 **Version:** 1.0.3
 **Author:** Akash Singh
-**License:** ISC
+**License:** GPL-3.0
 
 ## Table of Contents
 
@@ -142,4 +142,4 @@ Contributions to **Web-Scrap-AI** are welcome! If you have ideas for new feature
 
 ## License
 
-This project is licensed under the ISC License. See the [LICENSE](#LICENSE) file for details.
+This project is licensed under the GPL-3.0 License. See the [LICENSE](#LICENSE) file for details.
