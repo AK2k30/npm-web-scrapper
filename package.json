@@ -1,13 +1,16 @@
 {
   "name": "web-scrap-ai",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A chatbot CLI for web scraping using Puppeteer",
   "main": "index.js",
   "bin": {
     "web-scrap-ai": "./index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "web-scrap-ai": "node index.js",
+    "postinstall": "node install.js"
   },
   "keywords": [
     "web scraping",
