@@ -8,9 +8,9 @@
 
 1. [Overview](#overview)
 2. [Features](#features)
-3. [Step-by-Step Guide](###Step-by-Step Guide)
+3. [Step-by-Step Guid](#Step-by-Step Guid)
 4. [Installation](#installation)
-5. [Custome Class-Base scraping](#### Custom Class-Based Scraping)
+5. 
 6. [Usage](#usage)
    * [Command-Line Interface (CLI)](#command-line-interface-cli)
 7. [How It Works](#how-it-works)
