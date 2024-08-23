@@ -1,6 +1,6 @@
 {
   "name": "web-scrap-ai",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A chatbot CLI for web scraping using Puppeteer",
   "main": "index.js",
   "bin": {
@@ -21,6 +21,14 @@
   ],
   "author": "Akash Singh",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AK2k30/npm-web-scrapper"
+  },
+  "bugs": {
+    "url": "https://github.com/AK2k30/npm-web-scrapper/issues"
+  },
+  "homepage": "https://github.com/AK2k30/npm-web-scrapper#readme",
   "dependencies": {
     "cheerio": "^1.0.0",
     "chromedriver": "^128.0.0",
