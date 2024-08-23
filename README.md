@@ -1,4 +1,3 @@
----
 # Web-Scrap-AI
 
 **Version:** 1.0.3
@@ -9,16 +8,18 @@
 
 1. [Overview](#overview)
 2. [Features](#features)
-3. [Installation](#installation)
-4. [Usage](#usage)
+3. [Step-by-Step Guide](###Step-by-Step Guide)
+4. [Installation](#installation)
+5. [Custome Class-Base scraping](#### Custom Class-Based Scraping)
+6. [Usage](#usage)
    * [Command-Line Interface (CLI)](#command-line-interface-cli)
-5. [How It Works](#how-it-works)
+7. [How It Works](#how-it-works)
    * [AI Chatbot](#ai-chatbot)
-6. [Environment Variables](#environment-variables)
-7. [Error Handling](#error-handling)
-8. [Docker Support](#docker-support)
-9. [Contributing](#contributing)
-10. [License](#license)
+8. [Environment Variables](#environment-variables)
+9. [Error Handling](#error-handling)
+10. [Docker Support](#docker-support)
+11. [Contributing](#contributing)
+12. [License](#license)
 
 ## Overview
 
@@ -26,20 +27,44 @@
 
 ## Features
 
-* **Web Scraping:**
-  * Supports both automatic and custom class-based scraping using Puppeteer.
-  * Data is stored in JSON format, with a unique filename generated for each scrape.
-* **AI Chatbot:**
-  * Interact with the scraped data using a conversational AI powered by Groq's API.
-  * Fine-tune the AI to answer questions specifically related to the scraped data.
-  * Automatically detects and responds to specific data sections like titles or paragraphs.
-* **Environment Management:**
-  * Uses a `.env` file to securely store your Groq API key.
-  * Automatically creates or updates the `.env` file when needed.
-* **Script Automation:**
-  * Automatically adds a script to the user's `package.json` to streamline the usage of the CLI tool.
 * **Docker Support:**
-  * Dockerfile provided for easy containerization and deployment.
+* * Dockerfile provided for easy containerization and deployment.
+* **Automatic Web Scraping:** Quickly scrape a website's data using the built-in automatic scraping function.
+* **Custom Class-Based Scraping:** Target specific parts of a website by specifying class names and assigning custom titles to the scraped data.
+* **AI-Powered Chatbot:** Interact with the scraped data using an AI chatbot that can answer questions based on the data in JSON format.
+* **Context-Specific Queries:** Ask the chatbot about specific sections of the scraped data, like titles or paragraphs, using simple commands such as `/title` or `/paragraph`.
+* **Environment Configuration:** Easily configure and manage your Groq API key for AI interactions.
+
+### Step-by-Step Guide
+
+1. **Start the CLI:**
+   Run the following command in your terminal:
+   <pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>bash</span><div class="flex items-center"><span class="" data-state="closed"><button class="flex gap-1 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="icon-sm"><path fill="currentColor" fill-rule="evenodd" d="M7 5a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3h-2v2a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-9a3 3 0 0 1 3-3h2zm2 2h5a3 3 0 0 1 3 3v5h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-9a1 1 0 0 0-1 1zM5 9a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1z" clip-rule="evenodd"></path></svg>Copy code</button></span></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash">npm run web-scrap-ai
+   </code></div></div></pre>
+2. **Enter the Website URL:**
+   The CLI will prompt you to enter the URL of the website you want to scrape.
+3. **Choose Scraping Method:**
+   * **Automatic Scraping:** The tool will automatically scrape the most relevant data from the website.
+   * **Custom Class-Based Scraping:** You can specify the class names you want to scrape and assign custom titles to the scraped data.
+
+### Custom Class-Based Scraping
+
+Custom class-based scraping allows you to target specific elements of a website by providing the class names of those elements. This is particularly useful when you want to scrape specific sections of a page, such as product details, reviews, or any other content marked with identifiable class names.
+
+#### How It Class-Based Works
+
+* **Class Names:** You provide the class names of the elements you want to scrape.
+* **Titles:** For each class name, you assign a title that will be used in the resulting JSON file to categorize the data.
+
+#### Example
+
+Let's say you want to scrape a website's product names and prices:
+
+* Class name for product names: `.product-title`
+* Class name for product prices: `.product-price`
+* Assigned titles: `Product Names` and `Product Prices`
+
+During the scraping process, the tool will extract data from elements with these class names and store them under the provided titles in the JSON file.
 
 ## Installation
 
@@ -48,6 +73,7 @@ To install  **Web-Scrap-AI** , you can use npm:
 ```bash
 npm install web-scrap-ai
 ```
+
 This will install the package and automatically set up the required script in your `package.json`.
 
 ## Usage
