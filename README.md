@@ -8,18 +8,16 @@
 
 1. [Overview](#overview)
 2. [Features](#features)
-3. [Step-by-Step Guid](#Step-by-Step Guid)
-4. [Installation](#installation)
-5. 
-6. [Usage](#usage)
+3. [Installation](#installation)
+4. [Usage](#usage)
    * [Command-Line Interface (CLI)](#command-line-interface-cli)
-7. [How It Works](#how-it-works)
+5. [How It Works](#how-it-works)
    * [AI Chatbot](#ai-chatbot)
-8. [Environment Variables](#environment-variables)
-9. [Error Handling](#error-handling)
-10. [Docker Support](#docker-support)
-11. [Contributing](#contributing)
-12. [License](#license)
+6. [Environment Variables](#environment-variables)
+7. [Error Handling](#error-handling)
+8. [Docker Support](#docker-support)
+9. [Contributing](#contributing)
+10. [License](#license)
 
 ## Overview
 
