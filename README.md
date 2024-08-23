@@ -134,6 +134,12 @@ docker run -it web-scrap-ai
 
 Contributions to **Web-Scrap-AI** are welcome! If you have ideas for new features or improvements, feel free to submit a pull request or open an issue.
 
+## Support
+
+#### If you like this project, show your support & love!
+
+[![buy me a coffee](https://res.cloudinary.com/customzone-app/image/upload/c_pad,w_200/v1712840190/bmc-button_wl78gx.png)](https://www.buymeacoffee.com/akashsunile)
+
 ## License
 
 This project is licensed under the ISC License. See the [LICENSE](#LICENSE) file for details.
