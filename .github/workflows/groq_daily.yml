@@ -1,0 +1,35 @@
+name: Run Groq Script Twice a Day
+
+on:
+  schedule:
+    # Run at 11 AM and 9 PM IST (Convert to UTC)
+    - cron: '30 5 * * *'  # 11:00 AM IST (5:30 AM UTC)
+    - cron: '30 15 * * *' # 9:00 PM IST (3:30 PM UTC)
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install python-dotenv groq
+
+      - name: Run Groq Script
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}  # Load your API key from GitHub Secrets
+        run: |
+          python test/test.py > test/output_$(date +"%Y%m%d%H%M").txt
+          
+      - name: Upload Response File
+        uses: actions/upload-artifact@v3
+        with:
+          name: groq-response
+          path: test/output_*.txt
